@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><link href = 'style.css' rel = 'stylesheet'>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2d89ef" />
     <meta name="apple-mobile-web-app-title" content="WOLF" />
@@ -21,7 +21,7 @@
       name="description"
       content="Join us for a live event in the Miami sun."
     />
-    <title>Fintwit Goes to Miami</title>
+    <title>Fintwit Miami</title>
 </head>
 <body>
 
@@ -29,14 +29,15 @@
     <img class = 'logo' src = 'fintwit.png' alt = 'logo'>
 
     <div class = 'nav'>
-        <h1> Home </h1>
-        <h1> Schedule </h1>
-        <h1> Details </h1>
+        <a href = '#home'> <h1> Home </h1> </a>
+        <a href = '#schedule'> <h1> Schedule </h1> </a>
+        <a href = '#information'> <h1> Information </h1> </a>
+        <a href = '#speakers'> <h1> Speakers </h1> </a>
         <button> Buy Tickets </button>
     </div>
 </div>
 
-<div class = 'banner'>
+<div class = 'banner' id = 'home'>
     <div class = 'mast'>
         <h1> FinTwit Goes to Miami. </h1>
         <p> Join us for a first-of-its-kind event hosted by Financial Twitter's greatest stars. </p>
@@ -72,7 +73,7 @@
         </defs>
         <polygon points="0,0 135,120.6 0,241.3 " fill = "#0074ff"/>
         </svg>
-        <h1> Schedule </h1>
+        <h1 id = 'schedule'> Schedule </h1>
         </div>
 
         <div class = 'grid'>
@@ -173,8 +174,47 @@
             </defs>
             <polygon points="0,0 135,120.6 0,241.3 " fill = "red"/>
             </svg>
-            <h1> Information </h1>
+            <h1 id = 'information'> Information </h1>
             </div>
+
+        <div class = 'sec'>
+            <h1> Where will the event be held? </h1>
+            <p> The event will be held at the <a href = 'https://www.fontainebleau.com/'> Fontainebleau Miami Beach </a> hotel. </p>
+        </div>
+
+        <div class = 'sec'>
+            <h1> What if I can't make it to Miami? </h1>
+            <p>
+                We're looking into a live streaming option for people that can't attend the event in person.
+                If we can figure this out then those tickets would probably be <span> $25/ticket. </span>
+                If anyone has any suggestions on this please email me at <a href = 'mailto:jonah@luptoncapital.com'> jonah@luptoncapital.com</a>.
+            </p>
+        </div>
+
+        <div class = 'sec'>
+            <h1> What's included in the ticket price? </h1>
+            <p>
+                First off, nobody planning this event including me  <a href = 'https://twitter.com/JonahLupton'> (Jonah Lupton) </a>
+                will make a single dollar of profit.
+            </p>
+            <p>
+                100% of the revenues from ticket prices and sponsorships will go directly into making this the best event
+                possible.
+            </p>
+            <p>
+                Our goal is to have enough revenue from both ticket sales and sponsorships to cover breakfast
+                & lunch on Saturday and Sunday as well as any happy hours and pool parties that we put together.
+                We might not be able to cover 100% of everyone's food & drink costs but we'll do our best.
+            </p>
+        </div>
+
+        <div class = 'sec'>
+
+            <h2> Special Thanks to <a href = 'https://wolf.financial'> WOLF Financial </a> for helping with the planning of this event.</h2>
+            <img src = 'wolf.png'>
+        </div>
+
+
 
     </div>
 
@@ -187,7 +227,7 @@
             </defs>
             <polygon points="0,0 135,120.6 0,241.3 " fill = "#ffce00"/>
             </svg>
-            <h1> Speakers </h1>
+            <h1 id = 'speakers'> Speakers </h1>
         </div>
 
         <div class = 'profile' style = 'background-image: linear-gradient(90deg, black, #0e002e)'>
@@ -255,6 +295,20 @@
         </div>
 
     </div>
+
+
+    <div class = 'footer'>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            © Me 2021, All Rights Reserved
+        </p>
+    </div>
+
 </div>
 
 

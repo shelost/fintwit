@@ -2,6 +2,23 @@ body{
     font-family: Rubik, sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+button{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
+a{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
 .banner{
     width: 100vw;
     height: 100vh;
@@ -76,10 +93,20 @@ body{
         display: flex;
         align-items: center;
 
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
         h1{
             font-size: 20px;
             font-weight: 400;
             margin: 10px;
+            opacity: 0.5;
+            transition: 0.2s ease;
+            &:hover{
+                opacity: 1;
+            }
         }
 
         button{
@@ -111,7 +138,6 @@ body{
     top: 100vh;
     left: 0;
     width: 100vw;
-    padding-bottom: 50px;
 }
 
 
@@ -163,6 +189,7 @@ body{
     display: flex;
     align-items: center;
     margin: auto;
+    margin-bottom: 0;
     background: rgba(black, 0.04);
     padding: 10px;
     border-radius: 20px;
@@ -199,6 +226,7 @@ body{
 .speakers{
     background-color: black;
     color: white;
+    margin: 0;
 }
 
 .profile{
@@ -278,5 +306,61 @@ body{
 }
 
 .info{
-    background-color: #FFE3EB;
+    background-color: #ffeaf0;
+    padding-bottom: 50px;
+}
+
+.sec{
+    width: 85%;
+    max-width: 1800px;
+    margin: auto;
+    border-left: 2px solid red;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    h1{
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+        margin-bottom: 10px;
+
+    }
+    p{
+        font-size: 18px;
+        font-weight: 300;
+        margin: 0;
+    }
+    a{
+        font-weight: 500;
+        text-decoration: none;
+        color: #0074ff;
+        &:hover{
+            color: #003cff;
+        }
+    }
+    img{
+        height: 100px;
+    }
+    h2{
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+        margin-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+.footer{
+    background: black;
+    color: rgba(white, 0.5);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    p{
+        width: 50%;
+        max-width: 1000px;
+        margin: auto;
+        padding: 10px;
+    }
 }
