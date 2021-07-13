@@ -46,12 +46,14 @@ let loop = () => {
 
         window.onscroll = () => {
 
-            if (document.documentElement.scrollTop > pos){
-                console.log('scrolling down')
-                header.classList.remove('active')
-            }else{
-                console.log('scrolling up')
-                header.classList.add('active')
+            if (window.scrollY > window.innerHeight){
+                if (document.documentElement.scrollTop > pos){
+                    console.log('scrolling down')
+                    header.classList.remove('active')
+                }else{
+                    console.log('scrolling up')
+                    header.classList.add('active')
+                }
             }
 
             pos = document.documentElement.scrollTop
