@@ -297,6 +297,8 @@ a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 98vw;
     margin: auto;
   }
@@ -309,8 +311,8 @@ a:hover {
     margin-left: 1.5vw;
   }
   .sponsor {
-    width: calc( 94vw / 7);
-    height: calc( 94vw / 14);
+    width: calc( 96vw / 7);
+    height: calc( 96vw / 14);
     margin: calc(2vw / 7);
     border-radius: 5px;
   }

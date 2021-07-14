@@ -282,6 +282,7 @@ a{
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         width: 98vw;
         margin: auto;
     }
@@ -296,8 +297,8 @@ a{
     }
 
     .sponsor{
-        width: calc( 94vw / 7);
-        height: calc( 94vw / 14);
+        width: calc( 96vw / 7);
+        height: calc( 96vw / 14);
         margin: calc(2vw / 7);
         border-radius: 5px;
     }
