@@ -679,6 +679,7 @@ a:hover {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    background: red;
   }
   .profile.right .pfp {
     margin: 0;
